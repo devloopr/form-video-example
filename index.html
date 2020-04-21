@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="submitMessage">
+            Your form was submitted.
+        </div>
+
+        <form id="contactForm">
+            <div>
+                <input id="name" placeholder="First name *" />
+                <div class="error" id="nameError">Please enter your first name</div>
+            </div>
+
+            <div>
+                <input id="lastName" placeholder="Last name (at least 3 characters)*" />
+                <div class="error" id="lastNameError">Your last name must have at least 3 characters</div>
+            </div>
+
+            <div>
+                <input id="email" placeholder="Email *" />
+                <div class="error" id="emailError">Please enter a valid email address</div>
+            </div>
+
+            <div>
+                <textarea id="message"></textarea>
+                <div class="error" id="messageError">Your message must have at least 6 characters</div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
